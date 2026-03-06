@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Young Serif';
+    src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(30, 54%, 90%);
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+    padding: 2rem;
+}
+
+.recipe-card {
+    max-width: 650px;
+    width: 100%;
+    background-color: hsl(0, 100%, 100%);
+    padding: 2rem;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 1.9rem;
+    font-family: 'Young Serif', serif;
+    color: hsl(24, 5%, 18%);
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.7rem;
+    color: hsla(15, 4%, 18%, 0.559);
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.recipe-image {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+
+}
+
+.prep-time {
+    background-color: hsl(330, 100%, 98%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    color: hsla(32, 10%, 34%, 0.854);
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+
+}
+
+.prep-time h2 {
+    color: hsl(332, 51%, 32%);
+    font-size: 1rem;
+}
+
+.prep-time ul li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.prep-time ul li {
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.ingredients {
+    border-bottom: 1px solid hsla(32, 10%, 34%, 0.24);
+}
+
+.ingredients h2 {
+    margin-top: 2rem;
+    color: hsl(14, 45%, 36%);
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.ingredients ul li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+.ingredients ul li {
+    font-size: 0.7rem;
+    padding-left: 1em;
+    margin-bottom: 0.6em;
+    font-family: 'Outfit', sans-serif;
+    color: hsla(32, 10%, 34%, 0.774);
+
+}
+
+.ingredients ul {
+    margin-bottom: 2rem;
+
+}
+
+.instructions {
+    border-bottom: 1px solid hsla(32, 10%, 34%, 0.24);
+    padding-bottom: 1rem;
+}
+
+.instructions h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.instructions ol li {
+    font-family: 'Outfit', sans-serif;
+    color: hsla(32, 10%, 34%, 0.854);
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    padding-left: 1rem;
+
+}
+
+.instructions ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.nutrition h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.calorie-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calorie-table tr {
+    border-bottom: 1px solid hsla(32, 10%, 34%, 0.24);
+}
+
+.calorie-table tr:last-child {
+    border-bottom: none;
+}
+
+.calorie-table td,
+.calorie-table th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.7rem;
+}
+
+.calorie-table th {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+.calorie-table td {
+    width: 40%;
+    color: hsla(32, 10%, 34%, 0.854);
+}
+
+.attribution {
+    font-family: 'Young Serif', serif;
+    font-weight: 100;
+    color: hsl(14, 45%, 36%);
+}
+
+.attribution a {
+    text-decoration: none;
+
+}
+
+a:visited {
+    color: purple;
+}
+
+a:active {
+    color: red;
+}
